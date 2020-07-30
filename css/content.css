@@ -1,0 +1,56 @@
+/*
+* top-nav *
+*/
+.top-nav {
+  padding-left: 0;
+  border-bottom: 1px solid #D9DEE4;
+  position: -webkit-sticky;
+  position: sticky;
+  top: 0;
+  margin: 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #fff;
+  z-index: 30;
+}
+
+.top-nav .fa-bars {
+  font-size: 1.2rem;
+  padding: 15px;
+  cursor: pointer;
+}
+
+/*
+* content *
+*/
+.content {
+  padding: 40px 40px 0px;
+}
+
+.title h2 {
+  border-bottom: 4px double;
+  font-size: 1.7rem;
+  font-weight: bold;
+  padding-bottom: 11px;
+}
+
+.title .breadcrumb {
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
+  background-color: #fff;
+  padding-right: 0;
+}
+
+footer {
+  border-top: 1px dashed #ccc;
+  padding-top: 10px;
+  text-align: right;
+  font-size: 0.9rem;
+  margin-bottom: 40px;
+}
+/*# sourceMappingURL=content.css.map */

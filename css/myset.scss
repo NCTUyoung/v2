@@ -1,0 +1,41 @@
+$light-blue :#37ccff;
+$pink: #f45a8d;
+$gray: #717171;
+
+* {
+  box-sizing: border-box;
+}
+body {
+  font-size: 16px;
+  font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+  color: #767676;
+}
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+a {
+  color: $pink;
+  &:hover {
+    text-decoration: none;
+    color: lighten($pink, 10%);
+  }
+}
+p {
+  margin-bottom: 0;
+}
+a.disabled{
+  pointer-events: none;
+}
+th{
+  white-space: nowrap;
+}
+.btn{
+  border-radius: 0;
+}
+.card{
+  border-radius: 0;
+}
+input{
+  border-radius: unset !important;
+}

@@ -1,0 +1,205 @@
+.aside {
+  border-right: 2px solid #e8e8e8;
+  height: 100vh;
+  padding: 0 15px;
+  position: -webkit-sticky;
+  position: sticky;
+  left: 0;
+  top: 0;
+  overflow-y: scroll;
+  background-color: #fff;
+}
+
+.aside::-webkit-scrollbar {
+  height: 4px;
+  width: 4px;
+  background-color: transparent;
+}
+
+.aside::-webkit-scrollbar-thumb {
+  background-color: rgba(170, 170, 170, 0.3);
+  border-radius: 5px;
+}
+
+.aside::-webkit-scrollbar-track {
+  background-color: transparent;
+}
+
+h1 {
+  color: #2caedf;
+  font-weight: 600;
+  font-size: 1.7rem;
+  text-align: center;
+  padding: 40px 0 20px;
+}
+
+.active {
+  color: #f45a8d !important;
+}
+
+.active a {
+  color: #f45a8d !important;
+}
+
+.name {
+  margin-top: 5px;
+  margin-bottom: 20px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.name p {
+  color: #515356;
+}
+
+.member {
+  text-align: center;
+}
+
+.member .navbar {
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.member > a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #515356;
+}
+
+.member img {
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+}
+
+.member .dropdown-menu {
+  right: 0;
+  margin-top: 0;
+  background-color: #fff;
+  position: unset;
+  width: 100%;
+}
+
+.member .dropdown-menu a {
+  font-size: 0.9rem;
+  color: #515356;
+  display: block;
+  padding: 9px 20px;
+}
+
+.member .dropdown-menu a:hover {
+  background-color: #b7edff;
+}
+
+.lv {
+  background: #f45a8d;
+  font-size: 5px;
+  padding: 2px;
+  border-radius: 2px;
+  color: #fff;
+  margin: auto;
+  margin-right: 15px;
+}
+
+.nav-set {
+  text-align: left;
+  padding: 0;
+}
+
+.nav-set a {
+  display: block;
+  padding: 13px 15px 12px;
+  color: #717171;
+}
+
+.nav-set a:hover {
+  color: #f78aae;
+}
+
+.nav-set ul {
+  width: 100%;
+}
+
+.nav-set i {
+  padding-right: 10px;
+}
+
+.nav-set .fa-angle-down {
+  float: right;
+}
+
+.nav-set .navbar-nav {
+  display: block;
+}
+
+.navbar-expand-lg .navbar-nav .secondFloor {
+  position: unset;
+  border: unset;
+  font-size: 0.9rem;
+  margin-top: 0;
+  padding-top: 0;
+}
+
+.navbar-expand-lg .navbar-nav .secondFloor li {
+  position: relative;
+}
+
+.navbar-expand-lg .navbar-nav .secondFloor li::before {
+  content: "";
+  position: absolute;
+  width: 8px;
+  height: 8px;
+  background: #d2d2d2;
+  border-radius: 50%;
+  left: 19px;
+  top: 16px;
+}
+
+.navbar-expand-lg .navbar-nav .secondFloor li::after {
+  content: "";
+  position: absolute;
+  border-left: 1px solid #d2d2d2;
+  bottom: 0;
+  top: 0;
+  left: 23px;
+}
+
+.navbar-expand-lg .navbar-nav .secondFloor a {
+  padding-left: 45px;
+}
+
+.navbar-expand-lg .navbar-nav .secondFloor a:hover {
+  color: #717171;
+  background-color: #b7edff;
+}
+
+.signOut {
+  color: #717171;
+  padding: 15px 17px;
+  display: block;
+  margin-top: 22px;
+  margin-bottom: 15px;
+}
+
+.bar-style {
+  border-radius: 5px;
+  border: 1px solid #ddd;
+  padding: 10px 13px;
+  visibility: unset;
+  margin-left: -50px;
+}
+/*# sourceMappingURL=aside.css.map */

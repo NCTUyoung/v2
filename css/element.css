@@ -1,0 +1,221 @@
+@charset "UTF-8";
+/*內容標題*/
+.pageH2 {
+  margin-bottom: 20px;
+  border-bottom: 2px dashed #E6E9ED;
+  padding: 1px 5px 6px;
+  font-size: 1.3rem;
+  color: #73879C;
+  line-height: 34px;
+}
+
+/*按鈕*/
+.btn-back {
+  background: #2caedf;
+  color: #fff;
+}
+
+.btn-back:hover {
+  color: #fff;
+  background-color: #1e9ac9;
+}
+
+.btn-send {
+  background: #f45a8d;
+  color: #fff;
+}
+
+.btn-send:hover {
+  color: #fff;
+  background-color: #f13473;
+}
+
+.btn-send:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #ff009c40;
+          box-shadow: 0 0 0 0.2rem #ff009c40;
+}
+
+.btn-cancel {
+  background: #73879C;
+  color: #fff;
+}
+
+.btn-cancel:hover {
+  color: #fff;
+  background-color: #5b6e81;
+}
+
+.btn-cancel:focus {
+  -webkit-box-shadow: 0 0 0 0.2rem #6f6f6f40;
+          box-shadow: 0 0 0 0.2rem #6f6f6f40;
+}
+
+/*btnToggleStyle*/
+.btnToggleStyle button {
+  width: 100%;
+  padding: 12px;
+  background-color: #fff;
+  text-align: left;
+  border: 1px solid #ddd;
+  position: relative;
+  color: #73879C;
+}
+
+.btnToggleStyle button:hover {
+  color: #73879C;
+}
+
+.btnToggleStyle button::after {
+  content: "";
+  position: absolute;
+  right: 10px;
+  top: 50%;
+  margin-top: -2px;
+  border: 6px solid;
+  border-color: #73879C transparent transparent transparent;
+}
+
+.btnToggleStyle .card {
+  margin-top: 3px;
+}
+
+.timeline {
+  border: 1px solid #e8e8e8;
+  padding: 0 10px;
+  border-top: unset;
+}
+
+.timeline li {
+  position: relative;
+  border-bottom: 1px solid #e8e8e8;
+  clear: both;
+}
+
+.timeline .block {
+  margin: 0 0 0 115px;
+  border-left: 3px solid #e8e8e8;
+  overflow: visible;
+  padding: 10px 15px;
+}
+
+.timeline .date {
+  position: absolute;
+  top: 15px;
+  left: 0;
+  width: 90px;
+  letter-spacing: 0.5px;
+  background-color: #37ccff;
+  color: #fff;
+  line-height: 30px;
+  padding-left: 10px;
+}
+
+.timeline .date::after {
+  content: " ";
+  height: 30px;
+  width: 0;
+  position: absolute;
+  left: 100%;
+  top: 0;
+  margin: 0;
+  pointer-events: none;
+  border-top: 14px solid transparent;
+  border-bottom: 14px solid transparent;
+  border-left: 11px solid #37ccff;
+}
+
+.timeline .date::before {
+  content: "";
+  position: absolute;
+  right: -33px;
+  top: 9px;
+  display: block;
+  width: 14px;
+  height: 14px;
+  border: 3px solid #d2d3d2;
+  border-radius: 14px;
+  background: #f9f9f9;
+}
+
+.block_content h2 {
+  font-weight: bold;
+  margin-bottom: 10px;
+  margin-top: 11px;
+}
+
+.block_content p {
+  margin-bottom: 15px;
+}
+
+/*accordion-style*/
+.accordion-style .card-header {
+  background-color: #fff;
+  padding: 0;
+}
+
+.accordion-style button {
+  color: #73879C;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 10px;
+}
+
+.accordion-style button:hover, .accordion-style button:focus {
+  text-decoration: none;
+  color: #f45a8d;
+}
+
+.accordion-style button:hover .date, .accordion-style button:focus .date {
+  background-color: #00b6f4;
+}
+
+.accordion-style .date {
+  background-color: #37ccff;
+  color: #fff;
+  padding: 2px 8px;
+  font-size: 0.8rem;
+}
+
+/*刪除按鈕*/
+.modal-style .modal-header {
+  border-bottom: unset;
+}
+
+.modal-style .modal-body {
+  text-align: center;
+}
+
+.modal-style .modal-body i {
+  font-size: 5rem;
+}
+
+.modal-style .modal-footer {
+  border-top: unset;
+}
+
+/*group-style*/
+.group-style h4 {
+  background: #e6e9ed;
+  padding: 10px 15px;
+}
+
+.group-style ul {
+  padding: 6px;
+  padding-right: 0;
+}
+
+.group-style li {
+  padding: 5px 10px;
+}
+
+.group-style .ulBg li:hover {
+  background-color: #d0f3ff;
+}
+/*# sourceMappingURL=element.css.map */

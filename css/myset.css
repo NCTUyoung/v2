@@ -1,0 +1,50 @@
+@charset "UTF-8";
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+body {
+  font-size: 16px;
+  font-family: "微軟正黑體", Arial, Helvetica, sans-serif;
+  color: #767676;
+}
+
+ul {
+  list-style-type: none;
+  padding-left: 0;
+}
+
+a {
+  color: #f45a8d;
+}
+
+a:hover {
+  text-decoration: none;
+  color: #f78aae;
+}
+
+p {
+  margin-bottom: 0;
+}
+
+a.disabled {
+  pointer-events: none;
+}
+
+th {
+  white-space: nowrap;
+}
+
+.btn {
+  border-radius: 0;
+}
+
+.card {
+  border-radius: 0;
+}
+
+input {
+  border-radius: unset !important;
+}
+/*# sourceMappingURL=myset.css.map */

@@ -1,0 +1,484 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/4.5.0/css/bootstrap.min.css">
+  <link href="https://use.fontawesome.com/releases/v5.7.2/css/all.css" rel="stylesheet">
+  <link rel="icon" href="https://re.pin2d.com/static/images/favicon.ico" type="image/ico">
+  <link rel="stylesheet" href="/css/cssreset.css">
+  <link rel="stylesheet" href="/css/myset.css">
+  <link rel="stylesheet" href="/css/aside.css">
+  <link rel="stylesheet" href="/css/content.css">
+  <link rel="stylesheet" href="/css/element.css">
+  <link rel="stylesheet" href="/css/media.css">
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="row" id="clickToggleAdd">
+      <!--左選單-->
+      <div class="sm-toggle-bg"></div>
+      <div class="col-sm-4 col-lg-2 aside">
+        <a href="/">
+          <h1>電繪狂異世界版</h1>
+        </a>
+        <div class="member">
+          <img src="https://re.pin2d.com/static/images/someone_s.jpg" alt="使用者頭像">
+          <div class="navbar">
+            <a href="javascript:;" class="name" id="member" data-toggle="dropdown" aria-haspopup="true"
+              aria-expanded="false">
+              <div class="lv">LV.24</div>
+              <p class="pr-3">村民- 某某</p>
+              <i class="fas fa-angle-down"></i>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="member">
+              <li><a href="/users/userPage/49/">村民證</a></li>
+              <li><a href="/users/password_change/?next=/">修改密碼</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <nav class="navbar navbar-expand-lg nav-set">
+          <ul class="navbar-nav">
+            <li class="current-page active"><a href="/"><i class="fas fa-home lfFaa"></i> 首頁 </a></li>
+
+            <li>
+              <!--不同下拉要改 id 和 aria-labelledby-->
+              <a href="#" id="devilCity" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-crosshairs lfFaa" id="navbarDropdownMenuLink" role="button" data-toggle="dropdown"
+                  aria-haspopup="true" aria-expanded="false">
+                </i> 魔王城 <span class="fas fa-angle-down"></span>
+              </a>
+              <ul class="dropdown-menu secondFloor" aria-labelledby="devilCity">
+                <li><a href="/gm/">魔王模式</a></li>
+                <li><a href="/gm/allJob/">器官列表</a></li>
+                <li><a href="/gm/allCircle/">特訓團&amp;正法班</a></li>
+                <li><a href="/gm/allLesson/0/">活動一覽表</a></li>
+                <li><a href="#">公告事項(開發中)</a></li>
+                <li><a href="/users/profile/">修改個人資料</a></li>
+              </ul>
+            </li>
+
+            <li>
+              <a href="#" id="experience" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                <i class="fas fa-gem lfFaa"></i> 電繪經驗值 <span class="fas fa-angle-down"></span>
+              </a>
+              <ul class="dropdown-menu secondFloor" aria-labelledby="experience">
+                <li><a href="/exp/">狀態欄</a></li>
+                <li><a href="/exp/expForm/">練習紀錄</a></li>
+                <li><a href="/exp/expRank/">排行榜</a></li>
+                <li><a
+                    href="https://docs.google.com/spreadsheets/d/1PNI8KsRNvOYer-T4USSvWbXBnuJuvBOUv6RCaACbbOc/edit#gid=1915778247"
+                    target="_blank">等級說明</a></li>
+              </ul>
+            </li>
+            
+          </ul>
+        </nav>
+
+        <a href="/users/logout/?next=/" class="signOut"><i class="fas fa-sign-out-alt pr-3"></i>登出</a>
+      </div>
+      <!--右側區塊-->
+      <div class="col-sm-8 col-lg-10 content">
+        <div class="row">
+          <!--內容標題-->
+          <div class="col-md-12">
+            <div class="sm-title">
+              <i class="fas fa-bars bar-style mr-4" id="clickToggle"></i>
+              <a href="/">
+                <h1>電繪狂異世界版</h1>
+              </a>
+            </div>
+          </div>
+          <div class="col-md-12 title">
+            <h2>這裡什麼都沒有，只有你需要的一切！</h2>
+            <ol class="breadcrumb">
+              <li class="breadcrumb-item">Home</li>
+              <li class="breadcrumb-item active">Library</li>
+            </ol>
+          </div>
+          <!--內容位置 star-->
+          <div class="col-md-6 mb-5">
+            <h2 class="pageH2"><i class="fas fa-bullhorn faCont pr-2"></i>公告訊息</h2>
+            <div class="accordion accordion-style" id="accordionExample">
+
+              <div class="card">
+                <!-- collapse1 改3個位置、heading1 改2個位置 ->注意呼叫的id要一致 -->
+                <div class="card-header" id="heading1">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                      data-target="#collapse1" aria-expanded="true" aria-controls="collapse1">
+                      <div><i class="fab fa-font-awesome-flag pr-1"></i> 改掉一些BUG</div>
+                      <div class="date">
+                        2020.7.22
+                      </div>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse1" class="collapse show" aria-labelledby="heading1" data-parent="#accordionExample">
+                  <div class="card-body">
+                    伊恩的觀察日誌全社員可正常看到。自己的觀察日誌結論已可看到，以及紀錄上的測試星星去掉。會議紀錄能正常斷行。
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading2">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                      data-target="#collapse2" aria-expanded="false"" aria-controls=" collapse2">
+                      <div><i class="fab fa-font-awesome-flag pr-1"></i> 改掉一些BUG</div>
+                      <div class="date">
+                        2020.7.22
+                      </div>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse2" class="collapse" aria-labelledby="heading2" data-parent="#accordionExample">
+                  <div class="card-body">
+                    伊恩的觀察日誌全社員可正常看到。自己的觀察日誌結論已可看到，以及紀錄上的測試星星去掉。會議紀錄能正常斷行。
+                  </div>
+                </div>
+              </div>
+
+              <div class="card">
+                <div class="card-header" id="heading3">
+                  <h2 class="mb-0">
+                    <button class="btn btn-link btn-block text-left" type="button" data-toggle="collapse"
+                      data-target="#collapse3" aria-expanded="false"" aria-controls=" collapse3">
+                      <div><i class="fab fa-font-awesome-flag pr-1"></i> 改掉一些BUG</div>
+                      <div class="date">
+                        2020.7.22
+                      </div>
+                    </button>
+                  </h2>
+                </div>
+                <div id="collapse3" class="collapse" aria-labelledby="heading3" data-parent="#accordionExample">
+                  <div class="card-body">
+                    伊恩的觀察日誌全社員可正常看到。自己的觀察日誌結論已可看到，以及紀錄上的測試星星去掉。會議紀錄能正常斷行。
+                  </div>
+                </div>
+              </div>
+
+
+
+            </div>
+          </div>
+
+          <div class="col-md-6 mb-5">
+            <div class="btnToggleStyle mb-3">
+              <button class="btn" type="button" data-toggle="collapse" data-target="#collapseExample"
+                aria-expanded="false" aria-controls="collapseExample">
+                <i class="fas fa-bullhorn faCont pr-2"></i>公告訊息
+              </button>
+              <div class="collapse" id="collapseExample">
+                <ul class="timeline">
+                  <li>
+                    <div class="block">
+                      <div class="date">
+                        2020.7.22
+                      </div>
+                      <div class="block_content">
+                        <h2>改掉一些BUG</h2>
+                        <p>伊恩的觀察日誌全社員可正常看到。自己的觀察日誌結論已可看到，以及紀錄上的測試星星去掉。會議紀錄能正常斷行。</p>
+                      </div>
+                    </div>
+                  </li>
+                  <li>
+                    <div class="block">
+                      <div class="date">
+                        2020.7.22
+                      </div>
+                      <div class="block_content">
+                        <h2>改掉一些BUG</h2>
+                        <p>伊恩的觀察日誌全社員可正常看到。自己的觀察日誌結論已可看到，以及紀錄上的測試星星去掉。會議紀錄能正常斷行。</p>
+                      </div>
+                    </div>
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="col-md-6 mb-5">
+            <button type="button" class="btn btn-back">返回上一頁</button>
+            <button type="button" class="btn btn-send">送出</button>
+            <button type="button" class="btn btn-cancel">取消</button>
+          </div>
+
+          <div class="col-md-6 mb-5">
+            <!-- Button trigger modal -->
+            <button type="button" class="btn btn-danger" data-toggle="modal" data-target="#exampleModal">
+              <i class="far fa-trash-alt"></i>
+            </button>
+
+            <!-- Modal -->
+            <div class="modal fade modal-style" id="exampleModal" tabindex="-1" role="dialog"
+              aria-labelledby="exampleModalLabel" aria-hidden="true">
+              <div class="modal-dialog">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body mb-2">
+                    <i class="fas fa-trash-alt text-danger mb-3"></i>
+                    <p>確認是否要刪除「某某」?</p>
+                  </div>
+                  <div class="modal-footer">
+                    <button type="button" class="btn btn-cancel" data-dismiss="modal">取消</button>
+                    <button type="button" class="btn btn-danger">送出</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-4 mb-5">
+            <div class="group-style">
+              <h4><a href="/users/userPage/90/">Akami</a>部隊</h4>
+              <ul>
+                <li>
+                  <b>騎士 <a href="/users/userPage/160/">馬可</a> LV.45 </b>於2019.08加入
+                  <ul class="ulBg">
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/77/">廖家偉</a> LV.13 </b>
+                      於2020.01加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/359/">揚凱(卡樂)</a> LV.8 </b>
+                      於2020.07加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/143/">次祈晴</a> LV.26 </b>
+                      於2020.04加入
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <b>騎士 <a href="/users/userPage/160/">馬可</a> LV.45 </b>於2019.08加入
+                  <ul class="ulBg">
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/77/">廖家偉</a> LV.13 </b>
+                      於2020.01加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/359/">揚凱(卡樂)</a> LV.8 </b>
+                      於2020.07加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/143/">次祈晴</a> LV.26 </b>
+                      於2020.04加入
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <b>騎士 <a href="/users/userPage/160/">馬可</a> LV.45 </b>於2019.08加入
+                  <ul class="ulBg">
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/77/">廖家偉</a> LV.13 </b>
+                      於2020.01加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/359/">揚凱(卡樂)</a> LV.8 </b>
+                      於2020.07加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/143/">次祈晴</a> LV.26 </b>
+                      於2020.04加入
+                    </li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="group-style">
+              <h4><a href="/users/userPage/90/">Akami</a>部隊</h4>
+              <ul>
+                <li>
+                  <b>騎士 <a href="/users/userPage/160/">馬可</a> LV.45 </b>於2019.08加入
+                  <ul class="ulBg">
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/77/">廖家偉</a> LV.13 </b>
+                      於2020.01加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/359/">揚凱(卡樂)</a> LV.8 </b>
+                      於2020.07加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/143/">次祈晴</a> LV.26 </b>
+                      於2020.04加入
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <b>騎士 <a href="/users/userPage/160/">馬可</a> LV.45 </b>於2019.08加入
+                  <ul class="ulBg">
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/77/">廖家偉</a> LV.13 </b>
+                      於2020.01加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/359/">揚凱(卡樂)</a> LV.8 </b>
+                      於2020.07加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/143/">次祈晴</a> LV.26 </b>
+                      於2020.04加入
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <b>騎士 <a href="/users/userPage/160/">馬可</a> LV.45 </b>於2019.08加入
+                  <ul class="ulBg">
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/77/">廖家偉</a> LV.13 </b>
+                      於2020.01加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/359/">揚凱(卡樂)</a> LV.8 </b>
+                      於2020.07加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/143/">次祈晴</a> LV.26 </b>
+                      於2020.04加入
+                    </li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-4 mb-5">
+            <div class="group-style">
+              <h4><a href="/users/userPage/90/">Akami</a>部隊</h4>
+              <ul>
+                <li>
+                  <b>騎士 <a href="/users/userPage/160/">馬可</a> LV.45 </b>於2019.08加入
+                  <ul class="ulBg">
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/77/">廖家偉</a> LV.13 </b>
+                      於2020.01加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/359/">揚凱(卡樂)</a> LV.8 </b>
+                      於2020.07加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/143/">次祈晴</a> LV.26 </b>
+                      於2020.04加入
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <b>騎士 <a href="/users/userPage/160/">馬可</a> LV.45 </b>於2019.08加入
+                  <ul class="ulBg">
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/77/">廖家偉</a> LV.13 </b>
+                      於2020.01加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/359/">揚凱(卡樂)</a> LV.8 </b>
+                      於2020.07加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/143/">次祈晴</a> LV.26 </b>
+                      於2020.04加入
+                    </li>
+                  </ul>
+                </li>
+
+                <li>
+                  <b>騎士 <a href="/users/userPage/160/">馬可</a> LV.45 </b>於2019.08加入
+                  <ul class="ulBg">
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/77/">廖家偉</a> LV.13 </b>
+                      於2020.01加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/359/">揚凱(卡樂)</a> LV.8 </b>
+                      於2020.07加入
+                    </li>
+                    <li><i class="fas fa-caret-right"></i>
+                      <b>
+                        步兵 <a href="/users/userPage/143/">次祈晴</a> LV.26 </b>
+                      於2020.04加入
+                    </li>
+                  </ul>
+                </li>
+                
+              </ul>
+            </div>
+          </div>
+
+          <!--放內容位置 end-->
+        </div>
+        <div class="row">
+          <div class="col-md-12">
+            <footer>
+              Copyright © 2019 電繪狂. All Rights Reserved.
+            </footer>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://cdn.bootcdn.net/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdn.staticfile.org/twitter-bootstrap/4.5.0/js/bootstrap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+  <script>
+    // 小畫面開關
+    $('#clickToggle').click(function () {
+      const classList = $('#clickToggleAdd')[0].classList;
+      if(classList[1] === 'sm-toggle'){
+        $('#clickToggleAdd').removeClass('sm-toggle')
+      }else{
+        $('#clickToggleAdd').addClass('sm-toggle')
+      }
+    });
+  </script>
+</body>
+
+</html>
